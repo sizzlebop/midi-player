@@ -27,10 +27,10 @@ body {
 }
 
 .player-header h1 {
-    margin: 0 0 1.5rem 0;
-    text-align: center;
+    margin: 0;
     font-size: 2rem;
     color: var(--accent-color);
+    font-weight: bold;
 }
 
 .song-list {
@@ -212,4 +212,52 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 1rem;
+}
+
+.now-playing {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.now-playing p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+}
+
+.now-playing h3 {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 } 

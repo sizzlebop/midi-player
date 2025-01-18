@@ -1,0 +1,16 @@
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#00ff9d;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#00cc7e;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <g transform="translate(5, 5)">
+        <!-- Music note body -->
+        <path d="M25 2.5L25 30C25 35.5 20.5 40 15 40C9.5 40 5 35.5 5 30C5 24.5 9.5 20 15 20C17 20 19 20.5 20 21.5L20 7.5L10 10L10 5L25 2.5Z" 
+              fill="url(#logoGradient)" />
+        <!-- Sound waves -->
+        <path d="M30 15 A8 8 0 0 1 30 25" stroke="url(#logoGradient)" stroke-width="2" fill="none"/>
+        <path d="M35 10 A15 15 0 0 1 35 30" stroke="url(#logoGradient)" stroke-width="2" fill="none"/>
+    </g>
+</svg> 
