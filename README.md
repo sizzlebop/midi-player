@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/logo.svg" alt="MIDI Player Logo" width="150px"/>
+</div>
+
 # MIDI Player
 
 A sophisticated web-based MIDI player implementation featuring a modern, customizable interface and robust playback capabilities. This player offers an intuitive user experience while providing extensive customization options for seamless integration into any web project.
