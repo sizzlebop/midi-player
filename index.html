@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDI Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="player-container">
+            <div class="player-header">
+                <h1>MIDI Player</h1>
+            </div>
+            <div class="player-content">
+                <div class="song-list">
+                    <h2>Songs</h2>
+                    <select id="song-select">
+                        <option value="">Select a song...</option>
+                    </select>
+                </div>
+                <div class="player-controls">
+                    <button id="play-btn" class="control-btn">
+                        <span class="play-icon">▶</span>
+                    </button>
+                    <button id="pause-btn" class="control-btn">
+                        <span class="pause-icon">⏸</span>
+                    </button>
+                    <button id="stop-btn" class="control-btn">
+                        <span class="stop-icon">⏹</span>
+                    </button>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="time-display">
+                        <span id="current-time">0:00</span> / 
+                        <span id="total-time">0:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customization-panel">
+            <h2>Customize Player</h2>
+            <div class="color-controls">
+                <div class="control-group">
+                    <label>Primary Color:</label>
+                    <input type="color" id="primary-color" value="#2a2a2a">
+                </div>
+                <div class="control-group">
+                    <label>Secondary Color:</label>
+                    <input type="color" id="secondary-color" value="#3a3a3a">
+                </div>
+                <div class="control-group">
+                    <label>Accent Color:</label>
+                    <input type="color" id="accent-color" value="#00ff9d">
+                </div>
+                <div class="control-group">
+                    <label>Text Color:</label>
+                    <input type="color" id="text-color" value="#ffffff">
+                </div>
+            </div>
+
+            <div class="gradient-controls">
+                <div class="control-group">
+                    <label>Enable Gradient Background:</label>
+                    <input type="checkbox" id="enable-gradient">
+                </div>
+                <div class="control-group gradient-colors" style="display: none;">
+                    <label>Gradient Start:</label>
+                    <input type="color" id="gradient-start" value="#2a2a2a">
+                    <label>Gradient End:</label>
+                    <input type="color" id="gradient-end" value="#1a1a1a">
+                </div>
+            </div>
+
+            <div class="font-controls">
+                <div class="control-group">
+                    <label>Font Family:</label>
+                    <select id="font-family">
+                        <option value="Arial">Arial</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Roboto">Roboto</option>
+                        <option value="Open Sans">Open Sans</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="get-embed-code" class="embed-btn">Get Embed Code</button>
+        </div>
+
+        <div class="embed-code-modal" style="display: none;">
+            <div class="modal-content">
+                <h3>Embed Code</h3>
+                <p>Copy and paste this code into your website:</p>
+                <pre><code id="embed-code"></code></pre>
+                <button id="copy-embed-code" class="copy-btn">Copy Code</button>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/midi.js"></script>
+    <script src="player.js"></script>
+</body>
+</html> 
